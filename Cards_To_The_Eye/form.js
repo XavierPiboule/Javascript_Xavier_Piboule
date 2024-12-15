@@ -1,6 +1,7 @@
 let messageS = document.querySelector(".message-success");
 let messageE1 = document.querySelector(".error-name");
 let messageE2 = document.querySelector(".error-password");
+
 let form = document.querySelector("form");
 let pseudo = document.querySelector("#pseudo");
 let passWord = document.querySelector("#password");
@@ -22,6 +23,7 @@ form.addEventListener("submit", function(event){
     messageE2.style.display = "none";
 
     event.preventDefault();
+    
     //vérification pseudo
     if (pseudo.value.length < 6) { 
         console.log("error pseudo");
@@ -51,6 +53,7 @@ form.addEventListener("submit", function(event){
         messageE2.style.display = "none";
 
     }
+    
     if(valide == true){
         messageS.style.display = "block";
     }

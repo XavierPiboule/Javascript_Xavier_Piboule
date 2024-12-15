@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "brandon-grotesque";
+}
+
+body {
+    background-size: 20% 20%;
+    background-color: rgb(0, 0, 32);
+  }
+
+.darkbackground{
+    background-color: #FFEBDD;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 998;
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 0, 32);
+}
+
+.div_header{
+    background-color: #47B1A3;
+    display: flex;
+}
+
+.darkheader{
+    background-color: #FFEBDD;
+}
+
+
+.logo{
+    height: 180px;
+    margin: 10px;
+}
+
+.darkmod{
+    text-align: right;
+}
+
+#dark{
+    background-color: #EDCF9D;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#dark:hover{
+    background-color: #FFEBDD;
+}
+
+.titre_nav_bar{
+    width: 100%;
+    text-align: center;
+}
+
+.div_titre{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1{
+    color: black;
+    font-size: 50px;
+}
+
+.div_bar input[type=text]{
+    font-size: 24px;
+    width: 95%;
+    border-radius: 30px;
+    padding: 4px 16px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    background-color: #EDCF9D;
+}
+
+.nav a {
+    align-content: center;
+    align-items: center;
+    color: black;
+    background-color: #EDCF9D;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 15px;
+    margin: 24px;
+}
+.nav a:hover {
+    background-color: #FFEBDD;
+}
+
+.mainpage2{
+    display: flex;
+    padding: 0;
+    margin-top: 250px;
+}
+
+.sidebar{
+    position: fixed;
+    padding: 5px;
+    margin: 10px;
+    background-color: #EDCF9D;
+    border-radius: 15px;
+}
+.checkbox{
+    margin: 5px;
+    height: 32px;
+    width: 32px;
+}
+
+.reglage_checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.tabs{
+    display: flex;
+    margin: 50px;
+}
+
+.tab-button{
+    background-color: #47B1A3;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.paragraphe{
+    margin: 20px;
+    margin-top: -20px;
+    font-size: 28px;
+    color: rgb(184, 184, 184);
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.ow{
+    width: 80%;
+}
+
+.darkparagraphe{
+    color: black;
+}
+
+.imageow{
+    height: 250px;
+    border-radius: 20px;
+}
+
+.cartes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 180px;
+}
+
+.carte{
+    display: flex;
+    margin: 10px;
+    height: 400px;
+    transition: transform 0.3s ease;
+}
+
+.carte:hover{
+    transform: scale(1.05);
+}
+
+footer{
+    bottom: 0;
+    background-color: #47B1A3;
+    width: 100%;
+}
+
+.darkfooter{
+    background-color: #EDCF9D;
+}
+
+.txt_footer{
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px){
+    .logo{
+        height: 150px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    .div_titre{
+        margin: 5px;
+    }
+
+    .nav a {
+        font-size: 10px;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .div_bar input[type=text]{
+        font-size: 10px;
+        width: 75%;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .imageow{
+        height: 100px;
+    }
+
+    .sidebar{
+        padding: 5px;
+        margin: 10px;
+        margin-top: 200px;
+        border-radius: 15px;
+    }
+    .checkbox{
+        margin: 5px;
+        height: 24px;
+        width: 24px;
+    }
+
+    .cartes{
+        margin-top: 200px;
+        margin-left: 160px;
+    }
+
+    .carte{
+        height: 300px;
+    }
+}
